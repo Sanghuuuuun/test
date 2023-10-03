@@ -42,17 +42,28 @@ $\ddot{x}+\frac{k}{m}x=0$  이 된다.
 
 라플라스 변환을 이용하면  
 
-$X(s)=\frac{x_0s}{s^{2}+k/m}$ 의 식이 나오게 된다.
-$x(0)=x_0, \dot{x}(0)=0 $ 의 조건을 사용한 후 인버스 라플라스 변환을 적용하면
+$X(s)=\frac{x_0s}{s^{2}+k/m}$ 의 식이 나오게 된다.  
 
-x(t)=x_0\cos\sqrt{\frac{k}{m}}t
+$x(0)=x_0$ , $\dot{x}(0)=0$ 의 조건을 사용한 후 인버스 라플라스 변환을 적용하면  
 
+$x(t)=x_0\cos\sqrt{\frac{k}{m}}t$ 를 구할 수 있다.
 
 ---
 ### p2.26
+그림 P2.26을 보고   
+$M\ddot{x}+b(\dot{x}-\dot{y})+k(x-y)=F(t)$  
+$m\ddot{x}+b(\dot{y}-\dot{x})+k(y-x)=0$  
 
+위 식과 같은 로봇의 질량모델의 운동방정식을 구할 수 있다.  
 
+라플라스 변환을 하고, 행렬로 나타내면  
 
+$\begin{bmatrix}Ms^{2}+bs+k&-(bs+k)\\-(bs+k)&ms^{2}+bs+k\\ \end{bmatrix}$
+
+$ \begin{bmatrix}
+a & b \\\\
+c & d
+\end{bmatrix}$
 
 ---
 ### p2.37
